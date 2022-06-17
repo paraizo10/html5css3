@@ -19,5 +19,9 @@
 
 [optmizilla](http://imagecompressor.com/pt)
 
+### Validação
+
+[W3C](http://validator.w3.org)
+
 
 
