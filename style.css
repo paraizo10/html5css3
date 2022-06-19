@@ -1,9 +1,6 @@
-/*
-Folha de estilo do site one page HMTL5 e CSS3
+/*Folha de estilo do site one page HMTL5 e CSS3
 @author Rodrigo Paraizo
-rodrigoparaizo.com.br
-
-*/
+rodrigoparaizo.com.br*/
 
 /* CSS RESET */
 *{
@@ -20,17 +17,75 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
 }   
+
 /* Layout */
-.container{
+.container {
     margin: 0 auto;
-    background-color: #7f0
+    
+}
+/* Cabeçalho */
+.Flex {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* Topo do Site*/
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Cabeçalho */
+
+header {
+    height: 60px;
+}
+
+#logo img {
+    width: 128px;
+    height: 128px;
+}
+
+#check {
+    display: none;  
+}
+
+label{
+    font-size: 3em;
+    padding-right: 50px;
+}
+
+nav ul{
+    list-style: none;
+    background-color: #343538;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+
+}
+
+#check:checked ~ ul{
+    right: 0;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff
+}
+
+
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
-    body{
-        background-color: #ff0000;
-    }
+  
     /* LAYOUT */
     .container{
        max-width: 540px;
@@ -39,28 +94,59 @@ body{
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px){
-    body{
-        background-color: #668694;
-    }
+  
     .container{
         max-width: 720px;
     }
 }
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px){
-    body{
-        background-color: #1f0a21;
-    }
+   
     .container{
         max-width: 960px;
     }
 }
 /* Computer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px){
-    body{
-        background-color: #dee609;
-    }
+   
     .container{
         max-width: 1140px;
     }
+
+    /* CABEÇALHO */
+
+    header{
+        height: 120px;
+    }
+
+    #logo img {
+height: 189px;
+width: 189px;
+margin-top: 30px;
+    }
+
+    label{
+        display: none;
+
+    }
+
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+    }
+
+    nav ul li {
+        float:left;
+        border:0;
+    }
+
+    nav ul li a{
+        color: #343538
+    }
+
+    nav ul li a:hover{
+        color: #c00000
+    }
 }
+
