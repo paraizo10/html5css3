@@ -48,6 +48,11 @@ body{
     align-items: center;
 }
 
+.Flex3 {
+    display: flex;
+    flex-direction: column;
+
+}
 /* Topo do Site*/
 #topo {
     position: fixed;
@@ -160,6 +165,23 @@ nav ul li a {
 margin-right: 10px;
 }
 
+/* ONE PAGE */
+#onepage {
+    padding: 50px 10px;
+}
+
+#onepage h2 {
+    margin-bottom: 10px;
+}
+
+#onepage p {
+    margin-bottom: 25px;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+}
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
   
@@ -171,7 +193,10 @@ margin-right: 10px;
     main h1, main h2 {
         text-shadow: #000 0.05em 0.05em 0.05em;
     }
-
+    #video iframe {
+        width: 560px;
+        height: 315px;
+    }
    
 }
 
@@ -193,6 +218,11 @@ margin-right: 10px;
     main h2 {
         font-size: 2em;
     }
+
+    #video iframe {
+        width: 560px;
+        height: 315px;
+    }
 }
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px){
@@ -203,6 +233,11 @@ margin-right: 10px;
 
     main{
         height: 70vh;
+    }
+
+    #video iframe {
+        width: 560px;
+        height: 315px;
     }
 }
 /* Computer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -261,5 +296,17 @@ margin-top: 30px;
     #sobre {
         background-attachment: fixed;
     }
+    #video iframe {
+        width: 560px;
+        height: 315px;
+        border: 0;
+    }
+
+    /*one page*/
+ .Flex3 {
+    flex-direction: row;
+    align-items: center;
+ }
+
 }
 
